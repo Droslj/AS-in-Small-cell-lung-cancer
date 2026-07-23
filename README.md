@@ -27,7 +27,7 @@ Because of that, I do not rely on the aligner's soft-clipping. Feed the trimmed 
 
 [MultiQC pre](https://keen-frangipane-883ec6.netlify.app/)
 
-[MultiQC pre](https://gist.github.com/Droslj/ac963943d999a1eaf116813938af7918))
+[MultiQC pre](https://gist.github.com/Droslj/ac963943d999a1eaf116813938af7918)
 
 **Initial QC**
 
