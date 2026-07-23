@@ -25,13 +25,12 @@ Workflow steps are described in the following sections
 Initial QC shows negligible adapter content, but for an assay on alternative splicing, requirements for sequence precision are much higher than they would be for a standard gene expression or vari[...]
 Because of that, I do not rely on the aligner's soft-clipping. Feed the trimmed version into your splice-aware aligner to ensure your junction counts are as accurate as possible.
 
-[MultiQC pre](https://droslj.github.io/AS-in-Small-cell-lung-cancer/MultiQC_pre_trim.html)
+**Initial QC**: [MultiQC pre](https://droslj.github.io/AS-in-Small-cell-lung-cancer/MultiQC_pre_trim.html)
 
-**Initial QC**
 
-[MultiQC post](https://droslj.github.io/AS-in-Small-cell-lung-cancer/MultiQC_post_trim.html)
+**Post trimming QC**: [MultiQC post](https://droslj.github.io/AS-in-Small-cell-lung-cancer/MultiQC_post_trim.html)
 
-**Post trimming QC**
+
 
 ## 2-Pass STAR mode for Novel Junctions discovery
 
