@@ -14,7 +14,7 @@ For this analysis, I used RNA STAR in 2-pass mode combined with IsoformSwitchAna
 
 Complete workflow is provided on Figure 1.
 
-[Processing flow](Images/Complete_flow.png)
+![Processing flow](Images/Complete_WF.png)
 
 **Figure 1: Complete Processing Workflow**
 
