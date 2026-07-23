@@ -25,17 +25,13 @@ Workflow steps are described in the following sections
 Initial QC shows negligible adapter content, but for an assay on alternative splicing, requirements for sequence precision are much higher than they would be for a standard gene expression or vari[...]
 Because of that, I do not rely on the aligner's soft-clipping. Feed the trimmed version into your splice-aware aligner to ensure your junction counts are as accurate as possible.
 
-[MultiQC pre](https://keen-frangipane-883ec6.netlify.app/)
-
-[MultiQC pre](https://gist.github.com/Droslj/ac963943d999a1eaf116813938af7918)
+[MultiQC pre](https://cdn.jsdelivr.net/gh/Droslj/ac963943d999a1eaf116813938af7918@latest/MultiQC_pre_trim.html)
 
 **Initial QC**
 
-[MultiQC post](https://adorable-daffodil-bb6719.netlify.app/)
+[MultiQC post](https://cdn.jsdelivr.net/gh/Droslj/d4d50844e552e43d2257ece4c5ca72ba@latest/MultiQC_post_trim.html)
 
 **Post trimming QC**
-
-[MultiQC post](https://drive.google.com/file/d/1HnP6SOnbZeVBhWTwXxRLVS9chQ6Cr5Le/view?usp=drive_link)
 
 ## 2-Pass STAR mode for Novel Junctions discovery
 
@@ -107,7 +103,7 @@ If you plan to run Salmon by feeding it an alignment file, look for the output l
 2. If you are using Salmon in "Quasi-Mapping" Mode (Recommended)
 If you choose this route, you actually don't use the STAR BAM outputs for quantification.
 ●	Why: You will feed your original trimmed FastQ collections directly into Salmon, alongside a reference transcriptome (like a GENCODE FASTA file).
-●	What you use the STAR output for: In this scenario, you keep the standard RNA STAR: mapped reads (the genomic BAM file) as a backup for visualization in a genome browser (like IGV) to visuall[...]
+●	What you use the STAR output for: In this scenario, you keep the standard RNA STAR: mapped reads (the genomic BAM file) as a backup for visualization in a genome browser (IGV) to visuall[...]
 Summary Checklist for your Next Step
 Look at your Galaxy history and identify these files:
 
@@ -173,4 +169,4 @@ If UseGalaxy doesn't have the pre-computed Gencode vM38 transcriptome FASTA hand
 Do you see a Gencode transcript FASTA file anywhere in your available histories, or should we run gffread to make one real quick?
 
 References:
- [1] PRJNA1464579 
+ [1] PRJNA1464579
