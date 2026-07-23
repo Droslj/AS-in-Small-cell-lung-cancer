@@ -33,6 +33,8 @@ Because of that, I do not rely on the aligner's soft-clipping. Feed the trimmed 
 
 **Post trimming QC**
 
+[MultiQC post](https://drive.google.com/file/d/1HnP6SOnbZeVBhWTwXxRLVS9chQ6Cr5Le/view?usp=drive_link)
+
 ## 2-Pass STAR mode for Novel Junctions discovery
 
 RNA STAR supports 2-pass mode for improved junction discovery. In the first pass, STAR aligns the reads and discovers splice junctions de novo. In the second pass, it uses those discovered junctio[...]
