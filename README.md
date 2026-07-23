@@ -16,49 +16,26 @@ Complete workflow is provided on Figure 1.
 
 <img width="1172" height="1696" alt="image" src="https://github.com/user-attachments/assets/f859df17-5203-40b5-95d9-33f6a30f84bd" />
 
-![Complete WF](Complete_WF.png)
-
 **Figure 1: Complete Processing Workflow**
 
+Workflow steps are described in the following sections
 
-Since you are running this workflow, keeping your reads trimmed pays off specifically in how STAR and IsoformSwitchAnalyzeR interact:
-1. 2-Pass STAR and Novel Junctions
-In the first pass, STAR aligns the reads and discovers splice junctions de novo. In the second pass, it uses those discovered junctions to re-align all reads, which significantly improves the mapping of reads that cross novel or rare junctions.
-●	By using trimmed reads, you eliminate the risk of a fractional adapter sequence causing a false-positive junction definition during the first pass. This keeps your custom splice junction database ultra-clean for pass two.
-2. Transcript Quantification for IsoformSwitchAnalyzeR
-IsoformSwitchAnalyzeR doesn't take BAM files directly; it requires transcript-level quantification (usually from Salmon, Kallisto, or RSEM) to evaluate the isoform fractions (the "Isoform Fraction" or IF metric).
-●	Quantifiers like Salmon or Kallisto rely heavily on exact k-mer matching or target sequences. Unclipped adapters or polyA artifacts can alter the k-mer composition of a read, leading to misallocation or unmapped reads during quantification. Clean reads ensure your transcript expression matrix is highly accurate.
-Next Steps in Galaxy
-Since you are working in the UseGalaxy environment, you can easily set up STAR to run in 2-pass mode by adjusting the tool parameters:
-1.	Under Twists / Advanced Options in the STAR tool, look for the Chimeric and 2-pass mapping options.
-2.	Set Wiggle room for 2-pass mapping or the explicit 2-pass option to Basic (which runs the 2-pass on a per-sample basis).
-3.	If you plan to use Salmon or Kallisto right after, you can also tell STAR to output a translated-to-transcriptome coordinate BAM file (--quantMode TranscriptomeSAM), though running Salmon in quasi-mapping mode directly on your trimmed fastq collections is often faster and highly accurate.
-It sounds like you have a clear, precise path forward for this small cell lung cancer dataset!
-________________________________________
-User prompt: Tell me more about differential isoform skipping you mentioned
-Response: In standard alternative splicing tools (like rMATS), the focus is purely on local genomic events—asking if a specific exon is skipped or included more often in one condition versus another.
-IsoformSwitchAnalyzeR takes a more comprehensive, transcript-centric approach. Instead of looking at a single isolated event, it analyzes full-length transcripts to identify Isoform Switches. It then breaks down those switches to determine exactly which underlying alternative splicing events (like differential isoform skipping) caused the switch, and—crucially—what the functional consequences are for the protein.
-Here is how differential isoform skipping and switching works under the hood in this workflow:
-1. What is Differential Isoform Skipping / Switching?
-A gene can be highly expressed in both your SCLC tumor samples and healthy controls, but the ratio of its transcripts can completely flip.
-●	Condition A (Control): The gene predominantly produces Isoform 1, which includes a critical exon encoding a protein-protein interaction domain.
-●	Condition B (SCLC): The splicing machinery changes. The cell now shifts to producing Isoform 2, where that specific exon is skipped.
-IsoformSwitchAnalyzeR detects this by calculating Differential Isoform Usage (DIU) using the metric Percent Spliced In (PSI) or Isoform Fraction (IF). If the IF of an isoform significantly changes between conditions, it triggers an isoform switch.
-2. How IsoformSwitchAnalyzeR Annotates the "Skipping"
-Once the package identifies that an isoform switch has occurred, it analyzes the exact coordinates of the transcripts involved to classify the underlying alternative splicing events. It explicitly tracks several types of structural changes:
-●	Exon Skipping (ES): An entire exon present in the dominant control isoform is cleanly omitted in the tumor isoform.
-●	Alternative 3' or 5' Splice Sites (A3SS / A5SS): Part of an exon is skipped or truncated because the spliceosome utilized an alternative boundary.
-●	Alternative Transcription Start/Termination Sites (aTSS / aTTS): The beginning or end of the transcript skips initial or terminal exons due to different promoter usage or polyadenylation.
-3. The Functional Consequences (Why it matters for SCLC)
-What makes IsoformSwitchAnalyzeR so powerful for cancer datasets is that it doesn't stop at telling you an exon was skipped. It translates the nucleotide sequences of the switching transcripts into amino acid sequences and predicts how the phenotype changes:
-A. Loss or Gain of Protein Domains (via Pfam)
-If the skipped exon encodes a critical structural fold, the tool predicts a "Domain Loss." In SCLC, for example, skipping an exon in a tumor suppressor gene might remove its DNA-binding domain, rendering the protein completely non-functional even though total gene expression looks normal.
-B. Nonsense-Mediated Decay (NMD) Sensitivity
-If skipping an exon shifts the open reading frame (ORF), it can introduce a premature termination codon (PTC). IsoformSwitchAnalyzeR flags if the newly dominant tumor isoform is a target for NMD. If it is, the switch effectively acts as a post-transcriptional gene knockdown.
-C. Intrinsically Disordered Regions (IDRs) & Signal Peptides
-It predicts whether the skipping event removes a signal peptide (altering where the protein goes in the cell) or disrupts an intrinsically disordered region responsible for transient cellular signaling or liquid-liquid phase separation.
-Summarizing the Workflow Pipeline
-When you run your pipeline, the data travels through these conceptual stages:
+## Reads preprocessing
+
+Initial QC shows negligible adapter content, but for an assay on alternative splicing, requirements for sequence precision are much higher than they would be for a standard gene expression or variant-calling workflow.
+Because of that, I do not rely on the aligner's soft-clipping. Feed the trimmed version into your splice-aware aligner to ensure your junction counts are as accurate as possible.
+
+![MultiQC pre](QC/MultiQC_pre_trim.html)
+**Initial QC**
+
+![MultiQC post](QC/MultiQC_post_trim.html)
+**Post trimming QC**
+
+## 2-Pass STAR mode for Novel Junctions discovery
+
+RNA STAR supports 2-pass mode for improved junction discovery. In the first pass, STAR aligns the reads and discovers splice junctions de novo. In the second pass, it uses those discovered junctions to re-align all reads, which significantly improves the mapping of reads that cross novel or rare junctions.
+
+
 Raw FastQ Reads⟶STAR 2-Pass (Aligns Splice Junctions)⟶Salmon/Kallisto (Quantifies Full Isoforms)
 Then, in your R environment with IsoformSwitchAnalyzeR:
 1.	Part 1 (isoformSwitchAnalysisPart1()): Imports the abundance matrix, runs the differential mapping statistics, identifies switches, and extracts the FASTA sequences of the switching transcripts.
