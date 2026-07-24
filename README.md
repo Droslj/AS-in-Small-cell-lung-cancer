@@ -51,6 +51,10 @@ Closer look on provided data revealed following:
  - Issue 1. The Outlier sample (SRR38500642) has a Sequencing Depth Issue with roughly 30% less sequencing data than its counterparts. 
  - Issue 2. The Misclustered Control (SRR38500645) is due to Unmatched Biological Conditions
 
+According to the abstract, the authors performed multi-omics profiling on treatment-naïve human SCLC tumors along with paired adjacent tissues (NAT, n=12)—which they modeled here in mice (Mus musculus).
+- Cancer samples: C4-1, C3-1 and C1-1
+- Adjacent tissue: T2-2, T2-1, and T1-1.
+
 I proceeded by droping the low-depth outlier sample SRR38500642 from the count matrix entirely to stabilize the variance and repeated the DESeq2 analysis. 
 
 On second run, the PCA plot (Figure 3) again revealed irregularities.
@@ -72,7 +76,8 @@ Repeated DESeq2 analysis revealed that samples are now matched (Figure 4) and it
 
 **Figure 4: PCA plot (DESeq2 run3)**
 
-Then, in your R environment with IsoformSwitchAnalyzeR:
+## Analysis of Isoform switcing (IsoformSwitchAnalyzeR)
+
 1.	Part 1 (isoformSwitchAnalysisPart1()): Imports the abundance matrix, runs the differential mapping statistics, identifies switches, and extracts the FASTA sequences of the switching transcripts[...]
 2.	External Webservers/Tools: You feed those sequences to Pfam (for domains) and CPAT/CPC2 (for coding potential).
 3.	Part 2 (isoformSwitchAnalysisPart2()): Integrates those results to map the exact exon-skipping events to their downstream proteomic damage and spits out publication-ready visual models of the t[...]
