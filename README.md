@@ -29,6 +29,11 @@ Because of that, I did not rely on the aligner's soft-clipping, I used fastp for
 
 
 **Post trimming QC**: [MultiQC post trimming](https://droslj.github.io/AS-in-Small-cell-lung-cancer/MultiQC_post_trim.html)
+## 2-Pass STAR mode for Novel Junctions discovery
+
+RNA STAR supports 2-pass mode for improved junction discovery. In the first pass, STAR aligns the reads and discovers splice junctions de novo. In the second pass, it uses those discovered junctions for more accurate splice junction detection.
+
+## Transcript abundance 
 
 ## DESeq2 analysis
 
@@ -52,14 +57,20 @@ On second run, the PCA plot (Figure 3) again revealed irregularities.
 
 ![PCA plot run #2](/Images/DESeq2_PC_plot_run2.png)
 
-**Figure 2: PCA plot (DESeq2 run1)**
+**Figure 3: PCA plot (DESeq2 run2)**
 
+SRR38500645 (Tumor / C3-1) sample is not clustering on the far right with other tumor replicates (SRR38500644 and SRR38500646), it is pulled heavily to the left along PC1, sitting much closer to the healthy NormalX samples.
+In oncology datasets, this intermediate positioning typically points to one of two biological or technical realities:
+ 1. High Normal Tissue Contamination (Low Tumor Purity)
+ 2. A Partial Sample Mix-up or Subtype Difference
 
-## 2-Pass STAR mode for Novel Junctions discovery
+By keeping this sample, software in subsequent steps would assume that tumors are naturally highly variable, which will blow out the dispersion estimates and dramatically shrink your final list of statistically significant differentially expressed genes (DEGs), so I eliminated this sample from further analysis and continued to Isoform analysis with only four samples.
 
-RNA STAR supports 2-pass mode for improved junction discovery. In the first pass, STAR aligns the reads and discovers splice junctions de novo. In the second pass, it uses those discovered junctio[...]
+Repeated DESeq2 analysis revealed that samples are now matched (Figure 4) and it was OK to proceed to next step.
 
+![PCA plot run #3](/Images/DESeq2_PC_plot_run3.png)
 
+**Figure 4: PCA plot (DESeq2 run3)**
 
 Then, in your R environment with IsoformSwitchAnalyzeR:
 1.	Part 1 (isoformSwitchAnalysisPart1()): Imports the abundance matrix, runs the differential mapping statistics, identifies switches, and extracts the FASTA sequences of the switching transcripts[...]
