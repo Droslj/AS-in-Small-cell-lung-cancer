@@ -11,7 +11,7 @@ SCLC is notoriously aggressive form of cancer. Aberrant alternative splicing pla
 
 # Analysis method
 
-For this analysis, I used RNA STAR in 2-pass mode combined with IsoformSwitchAnalyzeR. IsoformSwitchAnalyzeR focuses on Isoform Switch Identification (ISI), allowing to observe changes in alternative splicing.<br>
+For this analysis, I used RNA STAR (in 2-pass mode for enhanced splice junction detection) coupled with IsoformSwitchAnalyzeR. IsoformSwitchAnalyzeR focuses on Isoform Switch Identification (ISI), allowing to observe changes in alternative splicing.<br>
 
 # Workflow
 
@@ -38,11 +38,11 @@ RNA STAR supports 2-pass mode for improved junction discovery. In the first pass
 
 ## Transcript abundance 
 
-Salmon was used to obtain transcript abundances per sample. Salmon used output from RNA STAR as input (unsorted bam files).<br>
+Salmon was used to quantify transcript abundances per sample. Salmon used output from RNA STAR as input (unsorted bam files).<br>
 
 ## DESeq2 analysis
 
-In an Isoform switching assay, DESeq2 analysis is interesting because it enables comparison of DE genes with DE isoforms. DESeq2 analysis was performed using transcript quantifications from Salmon. PCA plot, shown on Figure 2, exposed two major, distinct quality control issues that needed to be resolved before trusting any downstream differential expression statistics from DESeq2:<br>
+In an Isoform switching assay, performing DESeq2 analysis in paralel offers several benefits. DESeq2 analysis was performed using transcript quantifications from Salmon. PCA plot, shown on Figure 2, exposed two major, distinct quality control issues that needed to be resolved before trusting any downstream differential expression statistics from DESeq2:<br>
 
 Issue #1:  Severe Outlier (SRR38500642)<br>
 Sample SRR38500642 (Treated) is pulled completely away from everything else along the Y-axis (PC2 explains 23% of the variance).<br>
@@ -101,7 +101,7 @@ Hip1r is a critical component of clathrin-mediated endocytosis and vesicle traff
 
 Gene Expression Profile: Total Hip1r expression exhibits a downward trend in the tumor compared to normal tissue.<br>
 
-The Isoform Switch:
+The Isoform Switch:<br>
 ○	Normal: Dominated by the stable, full-length ENSMUST00000020165.13 transcript (~61% usage), which codes for the fully functional endocytic accessory protein.<br>
 ○	Tumor: Switches dominance to ENSMUST00000140224.2 (~54% usage). This variant is structurally truncated at the 3' end and is marked as NMD Sensitive (targeted for nonsense-mediated decay).<br>
 
@@ -117,7 +117,7 @@ Coro2b is a member of Coronin family of proteins, which are crucial regulators o
 
 Gene Expression Profile: Unchanged overall, with overlapping error bars indicating identical transcription levels between conditions.<br>
 
-The Isoform Switch:
+The Isoform Switch:<br>
 ○	Normal: Strictly utilizes the long, functional ENSMUST00000026208.10 isoform (~81% usage).<br>
 ○	Tumor: Reallocates splicing to over 60% usage of ENSMUST00000130006.2, a highly truncated, stable 3'-end variant consisting of only two exons.<br>
 
@@ -240,6 +240,13 @@ The Isoform Switch:<br>
 
 COMMD9 plays a critical role in endosomal recycling of cell-surface cargo and directly interacts in the nucleus with the transcription factor TFDP1 via its conserved C-terminal COMM domain to drive cell-cycle progression (G1 to S phase). The normal truncated variant lacks the COMM domain, acting as a regulatory buffer. The tumor eliminates this buffer completely, ensuring that 100% of translated COMMD9 is structurally equipped to bind TFDP1, maximizing E2F1-mediated cell-cycle transition and cargo recycling.
 
+# Summary of Isoform analysis
+
+Isoform switching of top 10 genes detected in this assay is summarized in the Table 1:
+
+![Summary of Isoform switching events](/Summary_switching/Commd9.png)
+
+**Table 1: Summary of Isoform analysis**
 
 **References**
  [1] PRJNA1464579
