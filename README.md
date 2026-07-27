@@ -244,7 +244,7 @@ COMMD9 plays a critical role in endosomal recycling of cell-surface cargo and di
 
 Isoform switching of top 10 genes detected in this assay is summarized in the Table 1:
 
-![Summary of Isoform switching events](/Summary_switching/Commd9.png)
+![Summary of Isoform switching events](/Images/Summary_switching.png)
 
 **Table 1: Summary of Isoform analysis**
 
