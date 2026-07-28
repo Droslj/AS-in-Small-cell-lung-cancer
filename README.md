@@ -54,7 +54,7 @@ Sample SRR38500645 is labeled as Normal, but it groups far closer to the Treated
 
 **Figure 2: PCA plot (DESeq2 run1)**
 
-Closer look on provided data revealed following:
+Closer look on provided data revealed following:<br>
  - Issue 1. The Outlier sample (SRR38500642) has a Sequencing Depth Issue with roughly 30% less sequencing data than its counterparts <br>
  - Issue 2. The Misclustered Control (SRR38500645) is due to Unmatched Biological Conditions.<br>
 
@@ -98,211 +98,210 @@ The following sections contain description of some of the more representative ge
 
 ## Hip1r
 
-Description
-Hip1r is a critical component of clathrin-mediated endocytosis and vesicle trafficking. It physically links the plasma membrane, clathrin coats, and the actin cytoskeleton using different domains.
+Description<br>
+Hip1r is a critical component of clathrin-mediated endocytosis and vesicle trafficking. It physically links the plasma membrane, clathrin coats, and the actin cytoskeleton using different domains.<br>
 
 ![Hip1r](/Images/Hip1r.png)
 
 **Figure 5: Hip1r Isoforms**
 
-Gene Expression Profile
-Total Hip1r expression exhibits an unchanged / flat trend in the tumor compared to normal tissue.
+Gene Expression Profile<br>
+Total Hip1r expression exhibits an unchanged / flat trend in the tumor compared to normal tissue.<br>
 
 
-Isoforms detected:
-Normal Primary Isoform: ENSMUST00000167879.2 (NMD Insensitive; contains ANTH domain only) — Significantly Decreased in Tumor (p < 0.001)
-Tumor Primary Isoform: ENSMUST00000167325.8 (NMD Sensitive; severely truncated C-terminal transcript) — Increased Usage in Tumor
-Secondary/Minor Isoform: ENSMUST0000000939.15 (NMD Insensitive; full-length canonical transcript with ANTH, HIP1, clathrin-binding, and I_LWEQ domains) — Slight non-significant increase
+Isoforms detected:<br>
+Normal Primary Isoform: ENSMUST00000167879.2 (NMD Insensitive; contains ANTH domain only) — Significantly Decreased in Tumor (p < 0.001)<br>
+Tumor Primary Isoform: ENSMUST00000167325.8 (NMD Sensitive; severely truncated C-terminal transcript) — Increased Usage in Tumor<br>
+Secondary/Minor Isoform: ENSMUST0000000939.15 (NMD Insensitive; full-length canonical transcript with ANTH, HIP1, clathrin-binding, and I_LWEQ domains) — Slight non-significant increase<br>
 
-Functional Mechanism
-Gain of NMD Sensitivity / Truncation
+Functional Mechanism<br>
+Gain of NMD Sensitivity / Truncation<br>
 
-Explanation
-The tumor switches from a domain-containing transcript (ENSMUST00000167879.2, ANTH domain) to a truncated, NMD-sensitive non-productive transcript (ENSMUST00000167325.8). This reduces functional endocytic receptor trafficking capacity through non-productive splicing.
+Explanation<br>
+The tumor switches from a domain-containing transcript (ENSMUST00000167879.2, ANTH domain) to a truncated, NMD-sensitive non-productive transcript (ENSMUST00000167325.8). This reduces functional endocytic receptor trafficking capacity through non-productive splicing.<br>
 
 ## Coro2b
 
-Description
-Coro2b is an actin-binding protein that regulates cell motility, lamellipodia formation, and cytoskeletal remodeling via autoinhibitory WD40 repeat interactions.
+Description<br>
+Coro2b is an actin-binding protein that regulates cell motility, lamellipodia formation, and cytoskeletal remodeling via autoinhibitory WD40 repeat interactions.<br>
 
 ![Coro2b](/Images/Coro2b.png)
 
 **Figure 6: Coro2b Isoforms**
 
-Gene Expression Profile
-Total Coro2b expression exhibits an unchanged / minimal change profile in the tumor compared to normal tissue.
+Gene Expression Profile<br>
+Total Coro2b expression exhibits an unchanged / minimal change profile in the tumor compared to normal tissue.<br>
 
 
-Isoforms detected:
-Normal Primary Isoform: ENSMUST00000048043.12 (NMD Insensitive; full-length harboring DUF1899 and multiple WD40 repeats) — Decreased Usage in Tumor
-Tumor Primary Isoform: ENSMUST00000174439.2 (NMD Insensitive; severely truncated C-terminal fragment containing only partial WD40 domain) — Significantly Increased in Tumor (p < 0.001)
-Minor Isoforms: ENSMUST00000164246.9 and ENSMUST00000173171.3 — Unchanged usage
+Isoforms detected:<br>
+Normal Primary Isoform: ENSMUST00000048043.12 (NMD Insensitive; full-length harboring DUF1899 and multiple WD40 repeats) — Decreased Usage in Tumor<br>
+Tumor Primary Isoform: ENSMUST00000174439.2 (NMD Insensitive; severely truncated C-terminal fragment containing only partial WD40 domain) — Significantly Increased in Tumor (p < 0.001)<br>
+Minor Isoforms: ENSMUST00000164246.9 and ENSMUST00000173171.3 — Unchanged usage<br>
 
-Functional Mechanism: 
-Loss of N-terminal DUF1899 Domain & WD40 Repeats
+Functional Mechanism: <br>
+Loss of N-terminal DUF1899 Domain & WD40 Repeats<br>
 
-Explanation
-The tumor upregulates ENSMUST00000174439.2, which lacks the DUF1899 domain and most WD40 repeats present in normal tissue (ENSMUST00000048043.12), impairing actin filament binding and cytoskeletal organization.
+Explanation<br>
+The tumor upregulates ENSMUST00000174439.2, which lacks the DUF1899 domain and most WD40 repeats present in normal tissue (ENSMUST00000048043.12), impairing actin filament binding and cytoskeletal organization.<br>
 
 ## Txlng
 
-Description
-Txlng (Taxilin Gamma) is involved in intracellular vesicle trafficking, syntaxin binding, and nucleocytoplasmic transport pathways.
+Description<br>
+Txlng (Taxilin Gamma) is involved in intracellular vesicle trafficking, syntaxin binding, and nucleocytoplasmic transport pathways.<br>
 
 ![Txlng](/Images/Txlng.png)
 
 **Figure 7: Txlng Isoforms**
 
-Isoforms detected:
-Normal Primary Isoform: ENSMUST00000131463.2 (NMD Sensitive; long transcript with Taxilin domain and extended $3'$ UTR) — Significantly Decreased in Tumor ($p < 0.001$)
-Tumor Primary Isoform: ENSMUST00000112314.8 (NMD Insensitive; shorter transcript retaining Taxilin domain) — Significantly Increased in Tumor ($p < 0.001$)
+Isoforms detected:<br>
+Normal Primary Isoform: ENSMUST00000131463.2 (NMD Sensitive; long transcript with Taxilin domain and extended $3'$ UTR) — Significantly Decreased in Tumor ($p < 0.001$)<br>
+Tumor Primary Isoform: ENSMUST00000112314.8 (NMD Insensitive; shorter transcript retaining Taxilin domain) — Significantly Increased in Tumor ($p < 0.001$)<br>
 
-Functional Mechanism
-Switch from NMD-Sensitive to NMD-Insensitive Isoform. 
+Functional Mechanism<br>
+Switch from NMD-Sensitive to NMD-Insensitive Isoform.<br> 
 
-Explanation
-Tumor cells drop ENSMUST00000131463.2 (NMD-sensitive) and upregulate ENSMUST00000112314.8 (NMD-insensitive), preventing mRNA degradation and maintaining Taxilin protein production.
+Explanation<br>
+Tumor cells drop ENSMUST00000131463.2 (NMD-sensitive) and upregulate ENSMUST00000112314.8 (NMD-insensitive), preventing mRNA degradation and maintaining Taxilin protein production.<br>
 
 ## Ero1a
 
-Description
-Ero1a is an essential endoplasmic reticulum (ER) oxidoreductase that catalyzes disulfide bond formation during protein folding and oxidative stress response.
+Description<br>
+Ero1a is an essential endoplasmic reticulum (ER) oxidoreductase that catalyzes disulfide bond formation during protein folding and oxidative stress response.<br>
 
 ![Ero1a](/Images/Ero1a.png)
 
 **Figure 8: Ero1a Isoforms**
 
-Gene Expression Profile
-Total Ero1a gene expression exhibits an apparent downregulation in tumor tissue.
+Gene Expression Profile<br>
+Total Ero1a gene expression exhibits an apparent downregulation in tumor tissue.<br>
 
-Isoforms detected:
-Normal Primary Isoforms: ENSMUST00000022378.9 (NMD Insensitive; full-length functional ERO1 oxidoreductase domain) — Decreased Usage in Tumor
-Tumor Primary Isoform: ENSMUST00000227315.2 (NMD Sensitive; truncated N-terminal isoform lacking key ERO1 domain regions) — Significantly Increased in Tumor (p < 0.001)
-Minor Isoform: ENSMUST00000228564.2 (NMD Insensitive, truncated) — Low/Decreased usage
+Isoforms detected:<br>
+Normal Primary Isoforms: ENSMUST00000022378.9 (NMD Insensitive; full-length functional ERO1 oxidoreductase domain) — Decreased Usage in Tumor<br>
+Tumor Primary Isoform: ENSMUST00000227315.2 (NMD Sensitive; truncated N-terminal isoform lacking key ERO1 domain regions) — Significantly Increased in Tumor (p < 0.001)<br>
+Minor Isoform: ENSMUST00000228564.2 (NMD Insensitive, truncated) — Low/Decreased usage<br>
 
-Functional Mechanism: 
-Shunting into NMD-Sensitive Truncated Isoform
+Functional Mechanism: <br>
+Shunting into NMD-Sensitive Truncated Isoform<br>
 
 
-Explanation
-Tumor tissue upregulates ENSMUST00000227315.2 (NMD-sensitive, truncated), suppressing functional ER oxidoreductase levels (ENSMUST00000022378.9).
+Explanation<br>
+Tumor tissue upregulates ENSMUST00000227315.2 (NMD-sensitive, truncated), suppressing functional ER oxidoreductase levels (ENSMUST00000022378.9).<br>
 
  ## Uqcc5 
  
-Description
-Uqcc5 is a nuclear-encoded assembly factor required for the proper biogenesis and stabilization of Mitochondrial Complex III (cytochrome $bc_1$ complex).
+Description<br>
+Uqcc5 is a nuclear-encoded assembly factor required for the proper biogenesis and stabilization of Mitochondrial Complex III (cytochrome $bc_1$ complex).<br>
 
-![Uqcc5](/Images/Uqcc5.png)
+![Uqcc5](/Images/Uqcc5.png)<br>
 
 **Figure 9: Uqcc5**
 
-Gene Expression Profile
-Total Uqcc5 expression exhibits an unchanged (flat) profile in tumor compared to normal tissue.
+Gene Expression Profile<br>
+Total Uqcc5 expression exhibits an unchanged (flat) profile in tumor compared to normal tissue.<br>
 
-Isoforms detected:
-Normal Primary Isoforms: ENSMUST00000064032.10 (Unchanged usage; ~50% IF) and ENSMUST00000203261.3 (Decreased usage; full length with UPF0640 domain)
-Tumor Primary Isoform: ENSMUST00000090205.5 (NMD Insensitive; truncated isoform retaining partial UPF0640 domain) — Significantly Increased in Tumor (p < 0.001)
+Isoforms detected:<br>
+Normal Primary Isoforms: ENSMUST00000064032.10 (Unchanged usage; ~50% IF) and ENSMUST00000203261.3 (Decreased usage; full length with UPF0640 domain)<br>
+Tumor Primary Isoform: ENSMUST00000090205.5 (NMD Insensitive; truncated isoform retaining partial UPF0640 domain) — Significantly Increased in Tumor (p < 0.001)<br>
 
-Functional Mechanism 
-Truncation of UPF0640 Complex III Assembly Domain. 
+Functional Mechanism <br>
+Truncation of UPF0640 Complex III Assembly Domain. <br>
 
 Explanation
-Tumor upregulates ENSMUST00000090205.5, resulting in partial domain truncation compared to full-length ENSMUST00000203261.3.
-
+Tumor upregulates ENSMUST00000090205.5, resulting in partial domain truncation compared to full-length ENSMUST00000203261.3.<br>
 
 ## Rras
 
-Description
-Rras is a small GTPase of the Ras superfamily that regulates cell adhesion, integrin activation, and blood vessel architecture.
+Description<br>
+Rras is a small GTPase of the Ras superfamily that regulates cell adhesion, integrin activation, and blood vessel architecture.<br>
 
 ![Rras](/Images/Rras.png)
 
 **Figure 10: Rras**
 
-Gene Expression Profile
-Total Rras expression exhibits a completely flat / unchanged trend in the tumor compared to normal tissue.
+Gene Expression Profile<br>
+Total Rras expression exhibits a completely flat / unchanged trend in the tumor compared to normal tissue.<br>
 
-Isoforms detected:
-Normal Primary Isoform: ENSMUST00000210895.2 (NMD Insensitive; short, non-domain-annotated isoform) — Significantly Decreased in Tumor (p < 0.001, drops to ~0%)
-Tumor Primary Isoform: ENSMUST0000044111.10 (NMD Insensitive; full-length functional Ras domain-containing transcript) — Significantly Increased in Tumor (p < 0.001, reaches ~100% usage)
+Isoforms detected:<br>
+Normal Primary Isoform: ENSMUST00000210895.2 (NMD Insensitive; short, non-domain-annotated isoform) — Significantly Decreased in Tumor (p < 0.001, drops to ~0%)<br>
+Tumor Primary Isoform: ENSMUST0000044111.10 (NMD Insensitive; full-length functional Ras domain-containing transcript) — Significantly Increased in Tumor (p < 0.001, reaches ~100% usage)<br>
 
-Functional Mechanism: 
-Gain of Complete Functional Ras GTPase Domain in Tumor
+Functional Mechanism: <br>
+Gain of Complete Functional Ras GTPase Domain in Tumor<br>
 
-Explanation
-Tumor tissue switches near 100% to ENSMUST0000044111.10 (full-length Ras domain), replacing a short non-annotated isoform (ENSMUST00000210895.2), directly promoting active oncogenic Ras signaling.
+Explanation<br>
+Tumor tissue switches near 100% to ENSMUST0000044111.10 (full-length Ras domain), replacing a short non-annotated isoform (ENSMUST00000210895.2), directly promoting active oncogenic Ras signaling.<br>
 
 ## Fxyd
 
-Description
-Fxyd3 (Mat8) is an auxiliary transmembrane subunit that regulates the affinity and turnover kinetics of the Na+/K-ATPase ion pump in epithelial membranes.
+Description<br>
+Fxyd3 (Mat8) is an auxiliary transmembrane subunit that regulates the affinity and turnover kinetics of the Na+/K-ATPase ion pump in epithelial membranes.<br>
 
 ![Fxyd3](/Images/Fxyd3.png)
 
 **Figure 11: Fxyd3**
 
-Gene Expression Profile
-Total Fxyd3 expression exhibits a modest / non-significant change in the tumor compared to normal tissue.
+Gene Expression Profile<br>
+Total Fxyd3 expression exhibits a modest / non-significant change in the tumor compared to normal tissue.<br>
 
-Isoforms detected:
-Normal Primary Isoform: ENSMUST00000165465.8 (NMD Insensitive; truncated short non-coding variant lacking the ATP1G1_PLM_MAT8 domain) — Significantly Decreased in Tumor ($p < 0.001$)
-Tumor Primary Isoform: ENSMUST00000167369.8 (NMD Insensitive; full-length functional transcript with intact ATP1G1_PLM_MAT8 ion-channel regulator domain) — Increased Usage in Tumor
-Minor Tumor Isoform: ENSMUST00000186839.2 (Unannotated C-terminal fragment; slight non-significant increase)
-Unchanged Isoforms: ENSMUST00000165265.8 & ENSMUST00000169424.8
+Isoforms detected:<br>
+Normal Primary Isoform: ENSMUST00000165465.8 (NMD Insensitive; truncated short non-coding variant lacking the ATP1G1_PLM_MAT8 domain) — Significantly Decreased in Tumor ($p < 0.001$)<br>
+Tumor Primary Isoform: ENSMUST00000167369.8 (NMD Insensitive; full-length functional transcript with intact ATP1G1_PLM_MAT8 ion-channel regulator domain) — Increased Usage in Tumor<br>
+Minor Tumor Isoform: ENSMUST00000186839.2 (Unannotated C-terminal fragment; slight non-significant increase)<br>
+Unchanged Isoforms: ENSMUST00000165265.8 & ENSMUST00000169424.8<br>
 
-Functional Mechanism
-Acquisition of Full-Length Ion-Channel Regulatory Domain (ATP1G1_PLM_MAT8)
+Functional Mechanism<br>
+Acquisition of Full-Length Ion-Channel Regulatory Domain (ATP1G1_PLM_MAT8)<br>
 
-Explanation
-Tumor cells shift away from a truncated transcript lacking domain annotation (ENSMUST00000165465.8) to the full-length domain-intact isoform (ENSMUST00000167369.8), facilitating  Na+/K+-ATPase regulation.
+Explanation<br>
+Tumor cells shift away from a truncated transcript lacking domain annotation (ENSMUST00000165465.8) to the full-length domain-intact isoform (ENSMUST00000167369.8), facilitating  Na+/K+-ATPase regulation.<br>
 
 ## Hsd17b14
 
-Description
-Hsd17b14 encodes a short-chain dehydrogenase/reductase (SDR) family enzyme responsible for the $NAD(P)-dependent oxidoreduction of steroid hormones and lipid substrates.
+Description<br>
+Hsd17b14 encodes a short-chain dehydrogenase/reductase (SDR) family enzyme responsible for the $NAD(P)-dependent oxidoreduction of steroid hormones and lipid substrates.<br>
 
 ![Hsd17b14](/Images/Hsdb17b14.png)
 
 **Figure 12: Hsd17b14**
 
-Gene Expression Profile
-Total Hsd17b14 expression remains unchanged in the tumor compared to normal tissue.
+Gene Expression Profile<br>
+Total Hsd17b14 expression remains unchanged in the tumor compared to normal tissue.<br>
 
-Isoforms detected:
-Normal Primary Isoform: ENSMUST00000107752.12 (NMD Insensitive; full-length functional transcript containing the complete adh_short_C2 dehydrogenase domain) — Significantly Decreased in Tumor ($p < 0.001$)
-Tumor Primary Isoform: ENSMUST00000211029.2 (NMD Insensitive; short internal fragment lacking the adh_short_C2 domain) — Significantly Increased in Tumor ($p < 0.001$, ~45% usage)
+Isoforms detected:<br>
+Normal Primary Isoform: ENSMUST00000107752.12 (NMD Insensitive; full-length functional transcript containing the complete adh_short_C2 dehydrogenase domain) — Significantly Decreased in Tumor ($p < 0.001$)<br>
+Tumor Primary Isoform: ENSMUST00000211029.2 (NMD Insensitive; short internal fragment lacking the adh_short_C2 domain) — Significantly Increased in Tumor ($p < 0.001$, ~45% usage)<br>
 
-Functional Mechanism 
-Loss of adh_short_C2 Dehydrogenase Domain.
+Functional Mechanism <br>
+Loss of adh_short_C2 Dehydrogenase Domain.<br>
 
-Explanation
-Tumor cells switch from full-length ENSMUST00000107752.12 to a short internal fragment (ENSMUST00000211029.2), abolishing 17 beta-hydroxysteroid dehydrogenase catalytic activity.
+Explanation<br>
+Tumor cells switch from full-length ENSMUST00000107752.12 to a short internal fragment (ENSMUST00000211029.2), abolishing 17 beta-hydroxysteroid dehydrogenase catalytic activity.<br>
 
 ## Commd9
 
-Description
-Commd9 is a component of the COMMD protein family involved in endosomal protein sorting, copper homeostasis, and negative regulation of NF-kB transcriptional activity.
+Description<br>
+Commd9 is a component of the COMMD protein family involved in endosomal protein sorting, copper homeostasis, and negative regulation of NF-kB transcriptional activity.<br>
 
 ![Commd9](/Images/Commd9.png)
 
 **Figure 12: Commd9**
 
-Gene Expression Profile
-Total Commd9 expression exhibits an unchanged trend in the tumor compared to normal tissue.
+Gene Expression Profile<br>
+Total Commd9 expression exhibits an unchanged trend in the tumor compared to normal tissue.<br>
 
-Isoforms detected:
-Normal Primary Isoform: ENSMUST00000133576.2 (NMD Insensitive; truncated transcript containing only the COMMD9_HN domain, lacking the COMM_domain) — Significantly Decreased in Tumor (p < 0.001)
-Tumor Primary Isoform: ENSMUST0000028584.8 (NMD Insensitive; full-length transcript containing BOTH COMMD9_HN and the downstream COMM_domain) — Significantly Increased in Tumor (p < 0.001, ~100% usage)
+Isoforms detected:<br>
+Normal Primary Isoform: ENSMUST00000133576.2 (NMD Insensitive; truncated transcript containing only the COMMD9_HN domain, lacking the COMM_domain) — Significantly Decreased in Tumor (p < 0.001)<br>
+Tumor Primary Isoform: ENSMUST0000028584.8 (NMD Insensitive; full-length transcript containing BOTH COMMD9_HN and the downstream COMM_domain) — Significantly Increased in Tumor (p < 0.001, ~100% usage)<br>
 
-Functional Mechanism 
-Gain of C-Terminal COMM Domain in Tumor
+Functional Mechanism <br>
+Gain of C-Terminal COMM Domain in Tumor<br>
 
-Explanation
-The tumor-upregulated transcript (ENSMUST0000028584.8) contains both the COMMD9_HN and COMM_domain regions, whereas the normal-dominant isoform (ENSMUST00000133576.2) lacked the COMM_domain. The switch actually restores or enhances functional copper binding and NF-kB/CCC complex interactions.
+Explanation<br>
+The tumor-upregulated transcript (ENSMUST0000028584.8) contains both the COMMD9_HN and COMM_domain regions, whereas the normal-dominant isoform (ENSMUST00000133576.2) lacked the COMM_domain. The switch actually restores or enhances functional copper binding and NF-kB/CCC complex interactions.<br>
 
 # Summary of Isoform analysis
 
-Isoform switching of top 10 genes detected in this assay is summarized in the Table 1:
+Isoform switching of top 10 genes detected in this assay is summarized in the Table 1:<br>
 
 ![Summary of Isoform switching events](/Images/Summary_switching.png)
 
