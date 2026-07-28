@@ -206,7 +206,7 @@ Tumor Primary Isoform: ENSMUST00000090205.5 (NMD Insensitive; truncated isoform 
 Functional Mechanism <br>
 Truncation of UPF0640 Complex III Assembly Domain. <br>
 
-Explanation
+Explanation<br>
 Tumor upregulates ENSMUST00000090205.5, resulting in partial domain truncation compared to full-length ENSMUST00000203261.3.<br>
 
 ## Rras
