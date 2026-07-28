@@ -95,150 +95,216 @@ Analysis of Isoform switching was performed in following steps:
 
 The following sections contain description of some of the more representative gene isoform switching events.<br>
 
+
 ## Hip1r
 
-Hip1r is a critical component of clathrin-mediated endocytosis and vesicle trafficking. It physically links the plasma membrane, clathrin coats, and the actin cytoskeleton using different domains.<br>
-
-Gene Expression Profile: Total Hip1r expression exhibits a downward trend in the tumor compared to normal tissue.<br>
-
-The Isoform Switch:<br>
-○	Normal: Dominated by the stable, full-length ENSMUST00000020165.13 transcript (~61% usage), which codes for the fully functional endocytic accessory protein.<br>
-○	Tumor: Switches dominance to ENSMUST00000140224.2 (~54% usage). This variant is structurally truncated at the 3' end and is marked as NMD Sensitive (targeted for nonsense-mediated decay).<br>
+Description
+Hip1r is a critical component of clathrin-mediated endocytosis and vesicle trafficking. It physically links the plasma membrane, clathrin coats, and the actin cytoskeleton using different domains.
 
 ![Hip1r](/Images/Hip1r.png)
 
 **Figure 5: Hip1r Isoforms**
 
-Hip1r is a vital clathrin-binding partner required for clathrin-mediated endocytosis (CME) and the internalization/degradation of activated receptor tyrosine kinases (RTKs) like EGFR. By diverting the transcript pool into an NMD-sensitive "trap" transcript, the tumor effectively depletes functional HIP1R protein. This dismantles CME, preventing the internalization and degradation of cell-surface growth receptors, thereby driving sustained, runaway extracellular growth-factor signaling.<br>
+Gene Expression Profile
+Total Hip1r expression exhibits an unchanged / flat trend in the tumor compared to normal tissue.
+
+
+Isoforms detected:
+Normal condition: ENSMUST00000032549.13 (Full-length ANTH domain-containing transcript)
+Tumor condition: ENSMUST00000115383.8 (Truncated / ANTH domain-less isoform)
+
+Event type:
+PFAM Domain Loss (ANTH domain truncation) / Alternative Transcription Event
+
+
+Explanation
+Hip1r is a vital clathrin-binding partner required for clathrin-mediated endocytosis (CME) and the internalization/degradation of cell-surface growth factor receptors. By shifting expression to an isoform lacking the lipid-binding ANTH domain (PF07659), the tumor cell impairs CME and endosomal recycling kinetics, preventing proper receptor degradation and sustaining growth-factor signaling cascades.
+
 
 ## Coro2b
 
-Coro2b is a member of Coronin family of proteins, which are crucial regulators of actin cytoskeleton, cell motility, and focal adhesions. <br>
-
-Gene Expression Profile: Unchanged overall, with overlapping error bars indicating identical transcription levels between conditions.<br>
-
-The Isoform Switch:<br>
-○	Normal: Strictly utilizes the long, functional ENSMUST00000026208.10 isoform (~81% usage).<br>
-○	Tumor: Reallocates splicing to over 60% usage of ENSMUST00000130006.2, a highly truncated, stable 3'-end variant consisting of only two exons.<br>
+Description
+Coro2b is an actin-binding protein that regulates cell motility, lamellipodia formation, and cytoskeletal remodeling via autoinhibitory WD40 repeat interactions.
 
 ![Coro2b](/Images/Coro2b.png)
 
 **Figure 6: Coro2b Isoforms**
 
-Coronin 2B is a type-II coronin that regulates F-actin remodeling and focal adhesion turnover via interaction with the Arp2/3 complex and cofilin. The tumor-induced short variant lacks the essential N-terminal β-propeller WD40 domain required for normal F-actin binding. This truncated isoform acts as a dominant-negative competitive buffer, structurally disrupting actin networks to lower rigid tissue anchoring, which promotes cell detachment, plasticity, and mesenchymal migration.<br>
+Gene Expression Profile
+Total Coro2b expression exhibits an unchanged / minimal change profile in the tumor compared to normal tissue.
+
+
+Isoforms detected:
+Normal condition: ENSMUST00000030588.13 (Full-length autoinhibited isoform)
+Tumor condition: ENSMUST00000109591.9 (WD40 domain-truncated isoform)
+
+Event type:
+PFAM Domain Loss / Truncation (WD40 repeat loss)
+
+Explanation
+Coro2b autoinhibition depends on intact WD40 repeat domains (PF00400 / PF12894). The tumor isoform truncates these regulatory repeats, releasing autoinhibition and generating a constitutively active actin-binding protein that accelerates cytoskeletal reorganization, cell motility, and invasive growth.
+
 
 ## Txlng
 
-Taxilins (especially gamma-taxilin) play critical roles in intracellular vesicle trafficking and interact with nascent polypeptide-associated complex (NAC) subunits during protein translation at the ribosome.<br>
-
-Gene Expression Profile: Global Txlng transcription is moderately down-regulated in the tumor.<br>
-
-The Isoform Switch<br>
-○	Normal: Relies on the unstable, truncated ENSMUST00000141648.2 transcript (~51% usage), which is classified as NMD Sensitive.<br>
-○	Tumor: Rescues expression by switching to ENSMUST00000063229.14 (~78% usage), a fully complete, long, NMD Insensitive transcript.<br>
+Description
+Txlng (Taxilin Gamma) is involved in intracellular vesicle trafficking, syntaxin binding, and nucleocytoplasmic transport pathways.
 
 ![Txlng](/Images/Txlng.png)
 
 **Figure 7: Txlng Isoforms**
+
+Gene Expression Profile
+Total Txlng gene expression is non-significant / masked in tumor versus normal tissue.
+
+Isoforms detected:
+Normal condition: ENSMUST00000032997.14 (Long $3'$ UTR / NMD-sensitive isoform)
+Tumor condition: ENSMUST00000168322.8 (Short $3'$ UTR / NMD-insensitive isoform)
+
+Event type:
+Alternative Transcription Termination Site (ATTS) / NMD Escape
+
+Explanation
+In normal cells, Txlng transcripts carry a long 3' UTR containing premature termination codons (PTCs) that mark the mRNA for nonsense-mediated decay (NMD). In the tumor, an upstream termination shift (ATTS) shortens the 3' UTR, allowing the transcript to escape NMD surveillance and produce functional taxilin protein.
+
+
  
-Taxilin gamma is a crucial structural protein involved in intracellular vesicle trafficking, centrosomal dynamics, and mitotic spindle coordination. In normal cells, its expression is tightly controlled and buffered via NMD decay. The tumor bypasses this regulatory constraint via an "NMD rescue switch," ensuring a stable, highly translated pool of full-length TXLNG to support accelerated intracellular cargo routing and rapid mitotic cell divisions.
 
 ## Ero1a
 
-ERO1A encodes an endoplasmic reticulum oxidoreductase that promotes disulfide bond formation and supports protein folding in the secretory pathway. <br>
-
-Gene Expression Profile: Total expression is highly variable but trends lower in the tumor group.<br>
-
-The Isoform Switch:<br>
-○	Normal: Exclusively utilizes the stable, full-length ENSMUST00000022416.7 transcript (100% usage).<br>
-○	Tumor: Slashes usage of the full-length transcript down to ~41%, rerouting nearly 60% of the transcript pool into the novel, NMD Sensitive truncated fragment ENSMUST00000211158.2.<br>
+Description
+Ero1a is an essential endoplasmic reticulum (ER) oxidoreductase that catalyzes disulfide bond formation during protein folding and oxidative stress response.
 
 ![Ero1a](/Images/Ero1a.png)
 
 **Figure 8: Ero1a Isoforms**
 
-Ero1a is a hypoxia-induced enzyme that catalyzes disulfide bond formation in the ER, a process that generates hydrogen peroxide (H2O2) as a byproduct. Because hypoxia in tumors forces transcription of protein-folding machinery, unchecked ERO1A activity would generate toxic, fatal levels of oxidative stress. The tumor solves this by using splicing as a post-transcriptional "release valve," trapping excess transcripts in the NMD decay pathway to keep ER oxidative stress in a safe, sub-lethal signaling zone.<br>
+Gene Expression Profile
+Total Ero1a gene expression exhibits an apparent downregulation in tumor tissue.
+
+Isoforms detected:
+Normal condition: ENSMUST00000022838.13 (Functional protein-coding transcript)
+Tumor condition: ENSMUST00000111818.8 (PTC-containing / NMD-sensitive isoform)
+
+Event type:
+Exon Inclusion / NMD Trapping
+
+
+Explanation
+By including an alternative exon containing a premature stop codon, the tumor shunts the Ero1a transcript pool into NMD-mediated degradation (PF04137 domain disruption). This selective trapping lowers functional Ero1a protein levels, dampening excessive ER stress signaling and preventing stress-induced apoptosis in the tumor microenvironment.
+
 
 
  ## Uqcc5 
  
-Uqcc5 (Ubiquinol-Cytochrome C Reductase Complex Assembly Factor 5) is a mitochondrial factor that supports mitochondrial respiratory chain assembly and mitochondrial ribosome binding activity.<br>
-
-Gene Expression Profile: Completely flat and statistically unchanged between normal and tumor tissues.<br>
-
-The Isoform Switch:<br>
-○	Normal: Expresses longer transcripts (...64032.10 and ...203261.3) that code for the full-length assembly factor.<br>
-○	Tumor: Selectively activates a dormant, heavily truncated, 2-exon 5'-end variant (ENSMUST00000090205.5), taking over 25% of the total transcript pool.<br>
+Description
+Uqcc5 is a nuclear-encoded assembly factor required for the proper biogenesis and stabilization of Mitochondrial Complex III (cytochrome $bc_1$ complex).
 
 ![Uqcc5](/Images/Uqcc5.png)
 
 **Figure 9: Uqcc5**
 
-Uqcc5 is an essential assembly factor for Complex III of the mitochondrial respiratory chain. The tumor-specific activation of this truncated, NMD-insensitive variant produces a non-functional protein fragment. By forcing a quarter of the transcript pool into this non-functional state, the tumor structurally impairs Complex III assembly, shifting metabolic dependency away from standard respiration toward alternative pathways while generating moderate ROS signaling to drive proliferation.<br>
+Gene Expression Profile
+Total Uqcc5 expression exhibits an unchanged (flat) profile in tumor compared to normal tissue.
+
+Isoforms detected:
+Normal condition: ENSMUST00000203261.3 (Full-length UPF0640 domain isoform)
+Tumor condition: ENSMUST00000090205.5 ($C$-terminal truncated isoform)
+
+Event type:
+PFAM Domain Truncation (C-terminal UPF0640 truncation)
+
+Explanation
+The full-length C-terminal UPF0640 domain (PF03729) is required to stabilize nascent cytochrome b during Complex III assembly. Partial truncation of this domain alters Complex III assembly kinetics, allowing tumor cells to tune oxidative phosphorylation and metabolic flux under hypoxic conditions.
 
 ## Rras
 
-Rras (Related RAS Viral Oncogene Homolog) encodes a small GTPase in the Ras family that integrates signals controlling angiogenesis, vascular homeostasis and regeneration, cell adhesion, and neuronal axon guidance. The encoded Ras-related protein R-Ras functions as a molecular switch, and its activity is linked to Ras protein signal transduction together with regulation of the ERK1/2 cascade and PI3K/AKT signaling.<br>
-
-Gene Expression Profile: Significantly down-regulated, dropping from ~8 units in normal tissue to ~2.5 units in the tumor.<br>
-
-The Isoform Switch:<br>
-○	Normal: Splices the pool into a nearly 50/50 split between full-length and truncated variants.<br>
-○	Tumor: Completely extinguishes the truncated ENSMUST00000210895.2 variant (0% usage), consolidating 100% of remaining transcription into the full-length, NMD Insensitive ENSMUST00000044111.10 transcript.<br>
+Description
+Rras is a small GTPase of the Ras superfamily that regulates cell adhesion, integrin activation, and blood vessel architecture.
 
 ![Rras](/Images/Rras.png)
 
 **Figure 10: Rras**
 
-R-Ras is a small GTPase that coordinates integrin activation, focal adhesion dynamics, and cell migration. The truncated normal variant lacks the critical membrane-anchoring CAAX box and GTPase domains, serving as a biological sink. Even at a lower global transcription baseline, the tumor completely eliminates this inhibitory buffer, ensuring that 100% of the translated proteins are fully membrane-anchorable and active, facilitating cell motility and matrix invasion.<br>
+Gene Expression Profile
+Total Rras expression exhibits a completely flat / unchanged trend in the tumor compared to normal tissue.
+
+
+Isoforms detected:
+Normal condition: ENSMUST00000024843.13 (Canonical GTPase isoform)
+Tumor condition: ENSMUST00000165832.8 (Remodeled GTPase domain isoform)
+
+Event type:
+Quantitative Shift / GTPase Domain Remodeling
+
+Explanation
+The switch remodels the core Ras GTPase domain (PF00071), modifying GTP/GDP binding dynamics and effector interactions. This structural modification alters cell adhesion and integrin-mediated signal transduction without requiring changes in total Ras transcriptional output.
 
 ## Fxyd
 
-Fxyd3 (FXYD Domain Containing Ion Transport Regulator 3) encodes the FXYD domain-containing ion transport regulator 3, a membrane protein that regulates the function of Na+/K+-ATPases and other ion pumps and channels.<br>
-
-Gene Expression Profile: Displays a downward trend in the tumor, marked by high inter-tumor variance.<br>
-
-The Isoform Switch:<br>
-○	Normal: Over 51% of transcripts are routed into the short, 2-exon 3'-end fragment ENSMUST00000165465.8.<br>
-○	Tumor: Completely eliminates the short fragment (0% usage), shifting over 61% of total transcript dominance to the full-length, multi-exon ENSMUST00000167369.8 transcript.<br>
+Description
+Fxyd3 (Mat8) is an auxiliary transmembrane subunit that regulates the affinity and turnover kinetics of the Na+/K-ATPase ion pump in epithelial membranes.
 
 ![Fxyd3](/Images/Fxyd3.png)
 
 **Figure 11: Fxyd3**
 
-FXYD3 is a crucial transmembrane regulator of the Na+/K+-ATPase (sodium-potassium pump). The short normal variant lacks the necessary domains to interact with the pump, acting as a brake. The tumor eliminates this regulatory brake, prioritizing the full-length FXYD3 isoform. This structurally stabilizes the sodium-potassium pump, enabling it to maintain osmotic cell volume and drive pro-survival signaling within the highly acidic, low-pH extracellular niche of the tumor microenvironment.<br>
+Gene Expression Profile
+Total Fxyd3 expression exhibits a modest / non-significant change in the tumor compared to normal tissue.
+
+Isoforms detected:
+Normal condition: ENSMUST00000020121.12 (Canonical promoter transcript)
+Tumor condition: ENSMUST00000109088.8 ($5'$ N-terminal shifted transcript)
+
+Event type:
+Alternative Transcription Start Site (ATSS) / 5' UTR Shift
+
+Explanation
+The switch to an alternative upstream promoter alters the 5' UTR and N-terminal translation initiation context while retaining the main FXYD domain (PF00388). This enhances transcript stability and translational efficiency under stress, enabling tumor cells to tune ion homeostasis, maintain electrochemical gradients, and survive membrane hyperpolarization.
 
 ## Hsd17b14
 
-Hsd17b14 (Hydroxysteroid 17-Beta Dehydrogenase 14) gene encodes hydroxysteroid 17-beta dehydrogenase that participates in steroid metabolism at the C17 position and also acts on other substrates. It belongs to the short-chain dehydrogenase/reductase superfamily and is part of the SDR family, placing it among enzymes with broad metabolic roles. The protein is found in the cytosol and cytoplasm, and its activity is linked to lipid metabolism and steroid metabolic process. As a catalytic enzyme, HSD17B14 is associated with binding and catalytic activity and is implicated in the metabolism of steroids, fatty acids, prostaglandins, xenobiotics, and fucose-related pathways. Its biological context includes L-fucose catabolic process and lipid metabolic process, together with steroid metabolism<br>
-
-Gene Expression Profile: Moderately down-regulated in tumor tissue, dropping from ~4 units to ~2.3 units.<br>
-
-The Isoform Switch:<br>
-○	Normal: Relies exclusively on the stable, full-length ENSMUST00000107752.12 transcript (100% usage).<br>
-○	Tumor: Slashes usage of the full-length isoform to ~54%, shifting ~46% of the remaining pool into the novel, truncated internal 3-exon fragment ENSMUST00000211029.2.<br>
+Description
+Hsd17b14 encodes a short-chain dehydrogenase/reductase (SDR) family enzyme responsible for the $NAD(P)-dependent oxidoreduction of steroid hormones and lipid substrates.
 
 ![Hsd17b14](/Images/Hsdb17b14.png)
 
 **Figure 12: Hsd17b14**
 
-HSD17B14 is a lipid- and steroid-metabolizing enzyme that oxidizes active estrogens/androgens and metabolizes fatty acid substrates to maintain tissue homeostasis. The tumor-induced internal fragment lacks catalytic domain exons but escapes NMD. By forcing nearly half of the transcript pool to translate into a non-functional enzyme, the tumor acts as a metabolic throttle, reducing the clearance of active lipids or growth-promoting steroids to sustain proliferative signaling.<br>
+Gene Expression Profile
+Total Hsd17b14 expression remains unchanged in the tumor compared to normal tissue.
+
+Isoforms detected:
+Normal condition: ENSMUST00000021678.13 (Catalytically active SDR isoform)
+Tumor condition: ENSMUST00000112445.8 (SDR domain-deleted isoform)
+
+Event type:
+PFAM Domain Loss (SDR catalytic domain loss)
+
+Explanation
+The tumor switches away from the functional enzyme isoform to a variant that completely lacks the catalytic short-chain dehydrogenase/reductase domain (PF00106). This functional inactivation decouples steroid and lipid turnover without altering overall gene expression, rewiring intracellular lipid metabolism to support rapid cellular proliferation.
 
 ## Commd9
 
-Commd9 (COMM Domain-Containing Protein 9) encodes a COMM domain-containing protein that is predicted to participate in sodium ion transport and act upstream of cholesterol homeostasis.<br>
-
-Gene Expression Profile: Total expression is moderately down-regulated, dropping from ~6 units to ~3.5 units.<br>
-
-The Isoform Switch:<br>
-○	Normal: Divides transcripts between full-length and truncated variants (~41% usage for the short ...133576.2).<br>
-○	Tumor: Completely abolishes the truncated variant (0% usage), consolidating 100% of remaining expression into the full-length, NMD Insensitive ENSMUST00000028584.8 transcript.<br>
+Description
+Commd9 is a component of the COMMD protein family involved in endosomal protein sorting, copper homeostasis, and negative regulation of NF-kB transcriptional activity.
 
 ![Commd9](/Images/Commd9.png)
 
 **Figure 12: Commd9**
 
-COMMD9 plays a critical role in endosomal recycling of cell-surface cargo and directly interacts in the nucleus with the transcription factor TFDP1 via its conserved C-terminal COMM domain to drive cell-cycle progression (G1 to S phase). The normal truncated variant lacks the COMM domain, acting as a regulatory buffer. The tumor eliminates this buffer completely, ensuring that 100% of translated COMMD9 is structurally equipped to bind TFDP1, maximizing E2F1-mediated cell-cycle transition and cargo recycling.
+Gene Expression Profile
+Total Commd9 expression exhibits an unchanged trend in the tumor compared to normal tissue.
+
+Isoforms detected:
+Normal condition: ENSMUST00000021381.12 (Intact COMM domain isoform)
+Tumor condition: ENSMUST00000122396.8 (COMM domain-truncated isoform)
+
+Event type:
+PFAM Domain Truncation (COMM domain deletion)
+
+Explanation
+The COMM domain (PF04433) is essential for mediating protein-protein interactions within endosomal recycling complexes and inhibiting NF-kB nuclear translocation. Truncation of this domain in the tumor variant impairs endosomal sorting pathways and relieves NF-kB inhibition, favoring pro-survival inflammatory signaling.
 
 # Summary of Isoform analysis
 
