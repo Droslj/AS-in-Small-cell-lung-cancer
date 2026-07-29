@@ -81,7 +81,7 @@ In oncology datasets, this intermediate positioning typically points to one of t
  1. High Normal Tissue Contamination (Low Tumor Purity)<br>
  2. A Partial Sample Mix-up or Subtype Difference<br>
 
-By keeping this sample, software in subsequent steps would assume that tumors are naturally highly variable, which will blow out the dispersion estimates and dramatically shrink your final list of statistically significant differentially expressed genes (DEGs), so I eliminated this sample from further analysis and continued to Isoform analysis with only four samples.<br>
+By keeping this sample, software in subsequent steps would assume that tumors are naturally highly variable, which would blow out the dispersion estimates and dramatically shrink final list of statistically significant differentially expressed genes (DEGs), so I eliminated this sample from further analysis and continued to Isoform analysis with only four samples.<br>
 
 Repeated DESeq2 analysis revealed that samples are now matched (Figure 4) and it was OK to proceed to next step.<br>
 
