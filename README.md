@@ -33,6 +33,9 @@ Because of that, I did not rely on the aligner's soft-clipping, I used fastp for
 
 **Post trimming QC**: [MultiQC post trimming](https://droslj.github.io/AS-in-Small-cell-lung-cancer/MultiQC_post_trim.html)
 
+<br>
+After clipping, less than 0.5% adapter content is present<br>
+
 ## 2-Pass STAR mode for Novel Junctions discovery
 
 RNA STAR supports 2-pass mode for improved junction discovery. In the first pass, STAR aligns the reads and discovers splice junctions de novo.<br> 
