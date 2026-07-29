@@ -154,8 +154,8 @@ Txlng (Taxilin Gamma) is involved in intracellular vesicle trafficking, syntaxin
 **Figure 7: Txlng Isoforms**
 
 Isoforms detected:<br>
-Normal Primary Isoform: ENSMUST00000131463.2 (NMD Sensitive; long transcript with Taxilin domain and extended $3'$ UTR) — Significantly Decreased in Tumor ($p < 0.001$)<br>
-Tumor Primary Isoform: ENSMUST00000112314.8 (NMD Insensitive; shorter transcript retaining Taxilin domain) — Significantly Increased in Tumor ($p < 0.001$)<br>
+Normal Primary Isoform: ENSMUST00000131463.2 (NMD Sensitive; long transcript with Taxilin domain and extended 3' UTR) — Significantly Decreased in Tumor (p < 0.001)<br>
+Tumor Primary Isoform: ENSMUST00000112314.8 (NMD Insensitive; shorter transcript retaining Taxilin domain) — Significantly Increased in Tumor (p < 0.001)<br>
 
 Functional Mechanism<br>
 Switch from NMD-Sensitive to NMD-Insensitive Isoform.<br> 
@@ -182,7 +182,6 @@ Minor Isoform: ENSMUST00000228564.2 (NMD Insensitive, truncated) — Low/Decreas
 
 Functional Mechanism: <br>
 Shunting into NMD-Sensitive Truncated Isoform<br>
-
 
 Explanation<br>
 Tumor tissue upregulates ENSMUST00000227315.2 (NMD-sensitive, truncated), suppressing functional ER oxidoreductase levels (ENSMUST00000022378.9).<br>
