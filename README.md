@@ -38,8 +38,9 @@ After clipping, less than 0.5% adapter content is present<br>
 
 ## 2-Pass STAR mode for Novel Junctions discovery
 
-RNA STAR supports 2-pass mode for improved junction discovery. In the first pass, STAR aligns the reads and discovers splice junctions de novo.<br> 
-In the second pass, it uses those discovered junctions for more accurate splice junction detection.<br>
+I used RNA STAR 2-pass mode for improved splice junction discovery:<br>
+ - In the first pass, STAR aligns the reads and discovers splice junctions de novo.<br> 
+ - In the second pass, it uses those discovered junctions for more accurate splice junction detection.<br>
 
 ## Transcript abundance 
 
