@@ -2,7 +2,7 @@
 Analysis of Alternative splicing in Tumor vs. Normal cells for Small cell lung cancer<br>
 
 **Keywords**
-Alternative Splicing, Small Cell Lung Cancer, Translational oncology<br>
+Alternative Splicing, Isoform switching, Small Cell Lung Cancer, Translational oncology, PFAM domains, Domain switching<br>
 
 # Introduction
 
