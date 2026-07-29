@@ -1,7 +1,8 @@
 # AS-in-Small-cell-lung-cancer
-Analysis of Alternative splicing in Tumor vs. Normal cells for Small cell lung cancer<br>
 
-**Keywords**
+Analysis of Alternative splicing comparing gene isoforms in Tumor vs. Normal cells for Small cell lung cancer<br>
+
+**Keywords**<br>
 Alternative Splicing, Isoform switching, Small Cell Lung Cancer, Translational oncology, PFAM domains, Domain switching<br>
 
 # Introduction
@@ -15,7 +16,7 @@ For this analysis, I used RNA STAR (in 2-pass mode for enhanced splice junction 
 
 # Workflow
 
-Complete workflow is provided on Figure 1.
+Complete workflow is provided on Figure 1.<br>
 
 ![Processing flow](Images/Complete_WF.png)
 
@@ -25,7 +26,7 @@ Workflow steps are described in the following sections<br>
 
 ## Reads preprocessing
 
-Initial QC shows negligible adapter content, but for an assay on alternative splicing, requirements for sequence precision are much higher than they would be for a standard gene expression or variant calling.
+Initial QC shows negligible adapter content, but for an assay on alternative splicing, requirements for sequence precision are much higher than they would be for a standard gene expression or variant calling.<br>
 Because of that, I did not rely on the aligner's soft-clipping, I used fastp for trimming adapter content.<br>
 
 **Initial QC**: [MultiQC raw reads](https://droslj.github.io/AS-in-Small-cell-lung-cancer/MultiQC_pre_trim.html)
@@ -34,7 +35,8 @@ Because of that, I did not rely on the aligner's soft-clipping, I used fastp for
 
 ## 2-Pass STAR mode for Novel Junctions discovery
 
-RNA STAR supports 2-pass mode for improved junction discovery. In the first pass, STAR aligns the reads and discovers splice junctions de novo. In the second pass, it uses those discovered junctions for more accurate splice junction detection.<br>
+RNA STAR supports 2-pass mode for improved junction discovery. In the first pass, STAR aligns the reads and discovers splice junctions de novo.<br> 
+In the second pass, it uses those discovered junctions for more accurate splice junction detection.<br>
 
 ## Transcript abundance 
 
