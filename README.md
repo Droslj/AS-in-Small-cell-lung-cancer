@@ -108,7 +108,6 @@ Hip1r is a critical component of clathrin-mediated endocytosis and vesicle traff
 Gene Expression Profile<br>
 Total Hip1r expression exhibits an unchanged / flat trend in the tumor compared to normal tissue.<br>
 
-
 Isoforms detected:<br>
 Normal Primary Isoform: ENSMUST00000167879.2 (NMD Insensitive; contains ANTH domain only) — Significantly Decreased in Tumor (p < 0.001)<br>
 Tumor Primary Isoform: ENSMUST00000167325.8 (NMD Sensitive; severely truncated C-terminal transcript) — Increased Usage in Tumor<br>
@@ -305,6 +304,21 @@ Isoform switching of top 10 genes detected in this assay is summarized in the Ta
 ![Summary of Isoform switching events](/Images/Summary_switching.png)
 
 **Table 1: Summary of Isoform analysis**
+
+**Conclussion**
+
+Above findings can be summarized in following points:<br>
+<br>
+1.	Independence from Gene Expression<br>
+Standard gene-level RNA-seq analysis based on DGE (DESeq2) would completely miss the critical biology behind most of the genes described above that exhibits unchanged/flat trend in the tumor compared to normal tissue. Only going to the gene isoform level enables detection of significant biological modification.<br>
+<br>
+
+2.	Multi-Layered Regulation<br>
+The tumor is systematically employing three sophisticated survival strategies:<br>
+ - Optimizing active complexes (Rras/Commd9/Fxyd3)<br>
+ - Manipulating cellular surveillance (Txlng/Ero1a)<br>
+ - Re-engineering structural binding domains (Coro2b/Hip1r).<br>
+
 
 **References**
  [1] PRJNA1464579
